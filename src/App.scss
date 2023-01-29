@@ -1,0 +1,46 @@
+@import "./components/navigation.scss";
+
+
+:root {
+  --color-primary: #eb2f64;
+  --color-dark: #ff3366;
+  --color-light: #ba265d;
+  --color-gray-1: #333;
+  --color-gray-2: #777;
+  --color-gray-3: #999;
+  --color-light1: #faf9f9;
+  --color-light2: #f4f2f2;
+  --color-light3: #f0eeee;
+  --color-light3: #ccc;
+  --box-shadow: 0 2rem 15px rgb(0, 0, 0, 0.5);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: no-repeat linear-gradient(to right bottom, var(--color-dark), var(--color-light));
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.App {
+  width: 80vw;
+  border-radius: 10px;
+  min-height: 90vh;
+  background-color: white;
+  margin: 7rem auto;
+  color: var(--color-gray-2);
+}
