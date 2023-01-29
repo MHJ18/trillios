@@ -3,7 +3,7 @@ import "./hotel.scss";
 const Hotel = () => {
   return (
     <>
-      <section className="side__menu">spanHotel</section>
+      <section className="side__menu"></section>
     </>
   );
 };
