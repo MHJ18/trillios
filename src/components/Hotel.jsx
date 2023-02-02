@@ -34,21 +34,23 @@ const Hotel = () => {
           </figure>
         </div>
         <div className="heading">
-          <h1>Hotel Las Palmas</h1>
-          <aside>
-            <RiStarSFill className="icon-star" />
-            <RiStarSFill className="icon-star" />
-            <RiStarSFill className="icon-star" />
-            <RiStarSFill className="icon-star" />
-            <RiStarSFill className="icon-star" />
-          </aside>
+          <div className="upper">
+            <h1>Hotel Las Palmas</h1>
+            <aside>
+              <RiStarSFill className="icon-star" />
+              <RiStarSFill className="icon-star" />
+              <RiStarSFill className="icon-star" />
+              <RiStarSFill className="icon-star" />
+              <RiStarSFill className="icon-star" />
+            </aside>
+          </div>
           <div className="location">
             <p>
               <MdLocationOn className="location-icon" />
               <a href="">Alberia, Portugal</a>
             </p>
-            <p>
-              8.6 <span className="counts">429 votes</span>
+            <p className="sidebar">
+              <span>8.6</span> <span className="counts">429 votes</span>
             </p>
           </div>
         </div>

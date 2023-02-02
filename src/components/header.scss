@@ -5,84 +5,92 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    &bar{
+
+    &bar {
         display: flex;
         flex-direction: column;
-         list-style-type: none;
-        
-& li{
-    display: flex;
-    transition: 0.5s;
-    padding: 1.5rem 0rem 1.5rem 1rem;
-     position: relative;
-   
-     &::before{
+        list-style-type: none;
+
+        & li {
+            display: flex;
+            transition: 0.5s;
+            padding: 1.5rem 0rem 1.5rem 1rem;
+            position: relative;
+
+            &::before {
                 content: "";
-    position: absolute; 
-    top: 0;
-    left: 0px;
-    width: 3px;
-    height: 100%;
-    transform: scaleY(0);
-    background-color: rgb(190, 16, 16);
-    transform-origin: center;
-    z-index: -1;
-    
-    transition: transform 0.3s ease-out ,width 0.2s 0.3s ease-out ;
+                position: absolute;
+                top: 0;
+                left: 0px;
+                width: 3px;
+                height: 100%;
+                transform: scaleY(0);
+                background-color: rgb(190, 16, 16);
+                transform-origin: center;
+                z-index: -1;
+
+                transition: transform 0.3s ease-out, width 0.2s 0.3s ease-out;
             }
-    &:is(:first-child){
-        margin-top: 2rem;
-    }
-    &:not(:first-child){
-        margin: 0.5rem 0;
-    }
-     &:hover {
-       &::before{
+
+            &:is(:first-child) {
+                margin-top: 2rem;
+            }
+
+            &:not(:first-child) {
+                margin: 0.5rem 0;
+            }
+
+            &:hover {
+                &::before {
                     z-index: 2;
                     transform: scaleY(1);
                     width: 100%;
                 }
-              
-             & a{
 
-             
-                z-index: 5;
-                
-                
-             }
-               
+                & a {
+
+
+                    z-index: 5;
+
+
+                }
+
             }
-}
-      
-        & li a {
-           text-decoration: none;
-           display: inline-block;
-           font-size: 1.9rem;
-           display: flex;
-           
-            color: var(--color-light2);
-           align-items: center;
-           fill: currentColor;
-           gap: 1rem;
-            
+        }
 
-           & .header-links{
-            font-size: 1.5rem;
-            display: block;
-            color: inherit;
+        & li a {
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1.9rem;
+            display: flex;
+
+            color: var(--color-light2);
+            align-items: center;
             fill: currentColor;
-            text-transform: uppercase;
-           
-           }
-        
+            gap: 1rem;
+
+
+            & .header-links {
+                font-size: 1.5rem;
+                display: block;
+                color: inherit;
+                fill: currentColor;
+                text-transform: uppercase;
+
+            }
+
         }
     }
 }
-.copy{
+
+.copy {
     text-align: center;
     color: var(--color-light2);
     font-weight: 400;
     padding-bottom: 0.2rem;
 }
-  
-   
+
+.active {
+    transition: all 0.5s;
+    background-color: var(--color-dark);
+}
