@@ -1,0 +1,64 @@
+.cta- {
+    & .section {
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 2rem 0 3rem 0;
+        gap: 2rem;
+
+
+        &>h3 {
+            font-size: 2.3rem;
+            color: var(--color-gray-2);
+
+        }
+
+        & .button {
+            color: unset;
+            text-decoration: unset;
+            display: inline-block;
+            border-radius: 20rem;
+            color: white;
+            font-size: 2rem;
+            font-weight: 500;
+            position: relative;
+            background: no-repeat linear-gradient(to left, var(--color-light), var(--color-dark));
+            transition: all 1s;
+            overflow: hidden;
+
+            &:hover {
+                background: no-repeat linear-gradient(to right, var(--color-primary), var(--color-dark));
+
+                & .invisible {
+                    top: 50%;
+                    transform: translate(15%, -25%);
+
+                }
+
+                & .visible {
+
+                    transform: translateY(100%);
+                }
+            }
+
+            & .visible {
+                display: inline-block;
+                transition: all 0.5s;
+                padding: 2rem 8rem;
+            }
+
+            & .invisible {
+
+                transition: all 0.5s;
+                display: inline-block;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: -40px;
+                left: 0;
+                transform: translate(15%, -50%);
+            }
+        }
+    }
+}

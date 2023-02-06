@@ -1,21 +1,31 @@
 .header-side {
     flex: 0 0 10%;
-    height: calc(90vh - 6rem);
+    align-self: stretch;
     background-color: var(--color-gray-1);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    transition: transform 2s, width 3s 1S;
+
 
     &bar {
         display: flex;
         flex-direction: column;
         list-style-type: none;
 
+
         & li {
             display: flex;
             transition: 0.5s;
             padding: 1.5rem 0rem 1.5rem 1rem;
             position: relative;
+
+
+            &.noshow::before {
+
+                transform: scaleY(0);
+                display: none;
+            }
 
             &::before {
                 content: "";
@@ -41,6 +51,9 @@
             }
 
             &:hover {
+
+
+                //li:hover.noshow::before
                 &::before {
                     z-index: 2;
                     transform: scaleY(1);
@@ -91,6 +104,7 @@
 }
 
 .active {
+
     transition: all 0.5s;
     background-color: var(--color-dark);
 }

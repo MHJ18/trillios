@@ -19,25 +19,25 @@ const Header = () => {
       <div className="header-side">
         <nav className="navbar">
           <ul className="header-sidebar">
-            <li className={first === "/" ? "active" : ""}>
+            <li className={first === "/" ? "active noshow" : ""}>
               <Link to="/" className="link ">
                 <AiFillHome className="icons" />
                 <span className="header-links">HOTEL</span>
               </Link>
             </li>
-            <li className={first === "/flights" ? "active" : ""}>
+            <li className={first === "/flights" ? "active noshow" : ""}>
               <Link to="flights" className="link">
                 <FaPlaneDeparture className="icons" />
                 <span className="header-links">flight</span>
               </Link>
             </li>
-            <li className={first === "/cars" ? "active" : ""}>
+            <li className={first === "/cars" ? "active noshow" : ""}>
               <Link to="cars" className="link">
                 <GoKey className="icons" />
                 <span className="header-links">Car rental</span>
               </Link>
             </li>
-            <li className={first === "/plans" ? "active" : ""}>
+            <li className={first === "/plans" ? "active noshow" : ""}>
               <Link to="plans" className="link">
                 <FaMap className="icons" />
                 <span className="header-links">Tours</span>
