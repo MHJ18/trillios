@@ -26,6 +26,11 @@
 
 html {
   font-size: 62.5%;
+
+  @media only screen and (max-width: 50em) {
+
+    font-size: 50%;
+  }
 }
 
 body {
@@ -39,8 +44,13 @@ body {
 }
 
 .App {
+  @media only screen and (max-width: 50em) {
+    max-width: 98rem;
+    margin: 0;
+    border-radius: unset;
+  }
 
-  width: 80vw;
+  max-width: 160rem;
   border-radius: 10px;
   height: 100%;
   background-color: white;
@@ -50,6 +60,11 @@ body {
 
 .flex {
   display: flex;
-  
+
+  @media only screen and (max-width: 50em) {
+    flex-direction: column;
+  }
+
+
 
 }

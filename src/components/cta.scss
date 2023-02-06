@@ -7,11 +7,21 @@
         margin: 2rem 0 3rem 0;
         gap: 2rem;
 
+        @media only screen and (max-width:38em) {
+            gap: 2rem;
+
+
+        }
 
         &>h3 {
             font-size: 2.3rem;
             color: var(--color-gray-2);
 
+            @media only screen and (max-width:38em) {
+                font-size: 2rem;
+
+
+            }
         }
 
         & .button {
@@ -27,12 +37,24 @@
             transition: all 1s;
             overflow: hidden;
 
+            @media only screen and (max-width:38em) {
+                font-size: 1.7rem;
+
+
+            }
+
             &:hover {
                 background: no-repeat linear-gradient(to right, var(--color-primary), var(--color-dark));
 
                 & .invisible {
                     top: 50%;
                     transform: translate(15%, -25%);
+
+                    @media only screen and (max-width:38em) {
+
+                        transform: translate(9%, -20%);
+
+                    }
 
                 }
 
@@ -43,6 +65,12 @@
             }
 
             & .visible {
+                @media only screen and (max-width:38em) {
+                    padding: 2rem 5rem;
+
+
+                }
+
                 display: inline-block;
                 transition: all 0.5s;
                 padding: 2rem 8rem;

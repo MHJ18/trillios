@@ -2,19 +2,21 @@
 
 
     flex: 1;
-    transition: all 2s;
-
-
+    transition: all 1s;
 
     &-images {
         display: flex;
-
         overflow: hidden;
 
         &>figure img {
             display: block;
             width: 100%;
             object-fit: cover;
+
+            @media only screen and (max-width:48em) {
+                width: 100%;
+
+            }
         }
     }
 
@@ -28,11 +30,32 @@
 
     & .upper {
         &>h1 {
+            @media only screen and (max-width:40em) {
+                font-size: 1.7rem;
+                font-weight: 600;
+                gap: 0;
+
+            }
+
+            @media only screen and (max-width:38em) {
+                font-size: 1.5rem;
+                font-weight: 600;
+                gap: 0;
+
+            }
+
             font-size: 2.7rem;
             text-transform: uppercase;
         }
 
         &>aside {
+            @media only screen and (max-width:40em) {
+                font-size: 1.1rem;
+                align-items: baseline;
+
+
+            }
+
             font-size: 1.8rem;
             color: var(--color-primary);
         }
@@ -52,8 +75,19 @@
         align-items: center;
         flex: 0 0 auto;
 
+        @media only screen and (max-width:48em) {
+            flex: 0 1 auto;
+
+
+        }
 
         &-icon {
+            @media only screen and (max-width:48em) {
+                font-size: 1.3rem;
+
+
+            }
+
             font-size: 1.8rem;
             color: var(--color-primary);
         }
@@ -67,6 +101,12 @@
 
 
             a:is(:link, :visited) {
+                @media only screen and (max-width:40em) {
+                    font-size: 1.4rem;
+
+
+                }
+
                 display: inline-block;
                 font-size: 1.6rem;
                 text-decoration: none;
@@ -85,13 +125,18 @@
                     height: 3px;
                     background-color: var(--color-primary);
                     transition: all 0.5s ease-in;
-
                     border-radius: 10px;
+
+                    @media only screen and (max-width:48em) {
+                        top: 20px;
+
+
+                    }
 
                 }
 
                 &:hover::after {
-                    transform: scale(1) translateX(11.5rem);
+                    transform: scale(1) translateX(9rem);
                     // width: 100%;
                     transform-origin: right;
 
@@ -117,7 +162,18 @@
 
                 padding: 0.6rem 1.6rem 0.5rem 1.6rem;
 
+                @media only screen and (max-width:48em) {
+                    font-size: 1.8rem;
+
+
+                }
+
                 .counts {
+                    @media only screen and (max-width:48em) {
+                        font-size: 0.8rem;
+
+
+                    }
 
                     text-align: center;
                     display: inline-block;
@@ -134,14 +190,35 @@
 /// 
 .cta- {
     &flex {
+        @media only screen and (max-width:48em) {
+            gap: 1rem;
+            padding: 2rem;
+
+
+        }
+
+        @media only screen and (max-width:40em) {
+            flex-direction: column;
+
+
+        }
+
         display: flex;
-        justify-content: center;
+
         gap: 3rem;
         background-color: var(--color-light2);
         padding: 3rem 5rem;
 
         &-left {
             flex: 0 0 60%;
+
+            @media only screen and (max-width:48em) {
+                padding: 2rem 1rem 0 2rem;
+                flex: auto;
+                border-radius: 1rem;
+
+
+            }
 
             padding: 2rem 2rem 0 3rem;
             background-color: var(--color-light1);
@@ -151,6 +228,12 @@
 
             & .review {
                 margin-top: 2rem;
+
+                @media only screen and (max-width:38em) {
+                    margin-bottom: 2rem;
+
+
+                }
             }
 
             & .recomend {
@@ -159,11 +242,16 @@
                 color: var(--color-gray-3);
                 flex: 0 1 60%;
 
+                @media only screen and (max-width:48em) {
+                    font-size: 1.1rem;
+
+
+                }
+
 
             }
 
             & .users {
-
                 display: flex;
                 align-items: center;
                 flex: 1;
@@ -179,6 +267,11 @@
                     margin-right: -0.5rem;
                     outline: 2px solid white;
 
+                    @media only screen and (max-width:40em) {
+                        height: 12%;
+                        width: 12%;
+                        margin-right: -0.4rem;
+                    }
                 }
             }
 
@@ -186,6 +279,12 @@
                 display: flex;
                 flex-wrap: wrap;
                 font-size: 1.4rem;
+
+                @media only screen and (max-width:40em) {
+                    font-size: 1.2rem;
+
+
+                }
 
                 & .list-items {
                     padding: 1rem;
@@ -214,6 +313,9 @@
             }
 
             &>p {
+                @media only screen and (max-width:40em) {
+                    font-size: 1.2rem;
+                }
 
                 font-size: 1.3rem;
                 line-height: 1.6;
@@ -234,6 +336,11 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
+
+            @media only screen and (max-width:40em) {
+                margin: 0;
+                gap: 1.5rem;
+            }
 
             border-radius: 1rem;
             align-items: center;
@@ -272,6 +379,12 @@
                 box-shadow: 0px 0px 15px rgba($color: #555, $alpha: 0.1);
                 position: relative;
                 overflow: hidden;
+
+                @media only screen and (max-width:38em) {
+                    max-width: 100%;
+                    border-radius: 1rem;
+
+                }
 
                 &-text {
                     z-index: 100;
