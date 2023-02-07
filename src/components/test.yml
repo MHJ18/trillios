@@ -1,0 +1,21 @@
+firstname: Hassaan
+lastname: javed
+age: 23
+object:
+    age: 23
+    job: none
+    graduated: yes
+    friends: 
+        aliage: 21
+        job: none
+        city: sialkot
+    houses:
+        - jinnah garden
+        - johr town
+        - badami bagh
+        - naziabad  
+    experience: 
+        - field: junior developer
+          period: 2022-2000
+         -field: senior developer
+          period: since 2005      
